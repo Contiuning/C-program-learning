@@ -42,4 +42,29 @@ int main()
 
 }
 
-
+Void 指针的强制类型转换
+#include<iostream>
+using namespace std;
+int main()
+{
+  int a=65;
+  int *ip;
+  void *vp=&a;
+  cout<<*(int*)vp<<endl;
+  cout<<*(char*)vp<<endl;
+  ip=(int*)vp;
+  cout<<(*ip)<<endl;
+}
+引用测试
+#include<iostream>
+using namespace std;
+int main()
+{
+  int a=2345;
+  int *pa;
+  int &ra=a;
+  pa=&a;
+  cout<<a<<'\t'<<ra<<'\t'<<*pa<<endl;
+  cout<<(&a)<<'\t'<<(&ra)<<'\t'<<pa<<endl;
+  cout<<(&pa)<<endl;
+}

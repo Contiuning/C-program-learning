@@ -117,3 +117,47 @@ int main()
   cout<<"十六进制数";
   cout<<hex<<a<<"+"<<b<<"="<<s<<endl;
 }
+s=0;i=1;
+loop:
+  if(i<=100)
+  { s+=i;
+    i++;
+    goto loop;
+  }
+
+s=0;i=1;
+white(i<=100)
+{ s+=i;
+  i++;
+}
+s=0;i=1;
+do 
+{s+=1;
+ i++;
+}  while(i<=100)
+
+for(s=0,i=1;i<=100;i++)
+{ s+=1;
+  i++;
+}
+
+s=0;i=1;
+for(;;)
+{ if(i<=100)break;
+  s+=1;
+  i++;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

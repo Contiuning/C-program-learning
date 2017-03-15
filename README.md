@@ -148,16 +148,27 @@ for(;;)
   i++;
 }
 
-
-
-
-
-
-
-
-
-
-
-
+函数首部和函数体
+double max（double x，double y）
+{ if（x>y） return x;
+  else     return y;
+}
+m1=max(a,b)
+cout<<max(m1,c)<<endl;
+#include<iostream>
+using namespace std;
+double max(double,double);
+int main()
+{ double a,b,c,m1,m2;
+  cout<<"input a,b,c:\n";
+  cin>>a>>b>>c;
+  m1=max(a,b);
+  m2=max(m1,c);
+  cout<<"Maximum"<<m2<<endl;
+}
+double max(double x,double y)
+{ if(x>y) return x;
+  else return y;  
+}
 
 

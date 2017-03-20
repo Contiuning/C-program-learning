@@ -170,5 +170,38 @@ double max(double x,double y)
 { if(x>y) return x;
   else return y;  
 }
+/*求圆柱的体积*/
+#include<iostream>
+using namespace std;
+double volume(double radius,double height);
+int main()
+{ double vol,r,h;
+  cout<<"input radius and height:\n";
+  cin>>r>>h;
+  vol=volume(r,h);
+  cout<<"Volume="<<vol<<endl;
+}
+double volume(double radius,double height)
+{ return 3.14*radius*radius*height;}
+#include<iostream>
+using namespace std;
+double max(doubel x,double y,double z);
+int main()
+{ double a,b,c,s;
+  cout<<"input a,b,c:\n"<<endl;
+  cin>>a>>b>>c;
+  s=max(a,b,c)/(max(a+b,b,c)*max(a,b,b+c));
+  cout<<"s="<<s<<endl;
+}
+double max(double x,double y,double z)
+{ double m;
+  if(x>=y) m=x;
+  else m=y;
+  if(z>=m) m=z;
+  return m;
+}
+
+
+
 
 

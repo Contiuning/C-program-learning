@@ -252,4 +252,26 @@ double f(fouble t)
 { return (1+exp(-t))/(1+exp(-t));
 }
 
-
+#include<iostream>
+#include<cmath>
+using namespace std;
+const PI=3.14159;
+double circlePerimeter(double radius)
+{return 2*PI*radius;}
+double circleArea(double radius)
+{return PI*radius*radius;}
+double bollArea(double radius)
+{return 4*PI*radius*radius;}
+double bollVolume(double radius)
+{return 4.0/3*PI*pow(radius,3);}
+int main()
+{ double(*pf)(double);
+  double r,cP,cA,bA,bV;
+  cout<<"enter the radius of a circle:";
+  cin>>r;
+  pf=circlePerimeter;
+  cP=pf(r);
+  pf=circleArea;
+  cA=pf(r);
+  ...省略
+}
